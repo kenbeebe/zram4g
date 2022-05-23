@@ -1,5 +1,5 @@
 #!/bin/bash
-modprobe zram4g num_devices=4
+modprobe zram num_devices=4
 
 totalmem=`free | grep -e "^Mem:" | awk '{print $2}'`
 mem=$(( ($totalmem)* 1024))
